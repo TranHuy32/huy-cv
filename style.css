@@ -669,3 +669,144 @@ h4 {
   font-size: 1.5rem;
   font-weight: 400;
 }
+
+/* MOBILE NAVIGATION */
+
+.mobilenav {
+  display: none;
+  position: relative;
+}
+
+.menu-icon {
+  color: black;
+  font-size: 25px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: #f9f9f9;
+  padding: 15px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 5px 10px;
+}
+
+.dropdown-content .nav__link--btn {
+  background-color: transparent;
+  color: var(--color-primary);
+  font-weight: 500;
+  padding: 5px 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Media Query */
+@media (max-width: 992px) {
+  .features {
+    margin: 0 2rem;
+  }
+
+  .nav {
+    padding: 0;
+  }
+
+  .nav__item {
+    margin-left: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .mobilenav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .header__title {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .header__img {
+    transform: translateY(0);
+  }
+
+  .section {
+    padding: 6rem 3rem;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .img-2 {
+    grid-row: 3/4;
+  }
+
+  .operations__tab-container {
+    width: 100%;
+  }
+
+  .operations__content {
+    padding: 4rem;
+  }
+
+  .operations__content--active {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn {
+    padding: 1rem 2.5rem;
+  }
+
+  .slider,
+  .slide {
+    height: 88rem;
+  }
+
+  .operations__tab {
+    margin-right: 1rem;
+  }
+
+  .testimonial {
+    width: 75%;
+    height: 80%;
+  }
+
+  .testimonial::before {
+    font-size: 7rem;
+    left: -3.8rem;
+  }
+
+  .slider__btn {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .footer__nav {
+    flex-direction: column;
+  }
+}

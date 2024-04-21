@@ -11,10 +11,19 @@
   <link rel="stylesheet" href="style.css" />
   <title>Bankist | When Banking meets Minimalist</title>
   <script src="script.js"></script>
+  <script type="text/javascript">
+    window.onload = function() {
+        window.setTimeout(
+            function() { window.scrollTo(0,0); },
+            10
+        );
+    };
+    </script>
 </head>
 
 <body>
   <header class="header">
+    <!-- PC/tablet nav -->
     <nav class="nav">
       <img src="img/logo.png" alt="Bankist logo" class="nav__logo" id="logo" designer='Mia' data-version-number="3.0" />
       <ul class="nav__links">
@@ -32,6 +41,23 @@
         </li>
       </ul>
     </nav>
+
+    <!-- Mobile nav -->
+    <div class="mobilenav">
+      <img src="img/logo.png" alt="Bankist logo" class="nav__logo" id="logo" designer='Mia' data-version-number="3.0" />
+      <div class="dropdown">
+        <!-- <button class="dropbtn">
+          <i class="fa fa-caret-down"></i>
+        </button> -->
+        <div class="dropdown-content">
+          <a class="nav__link" href="#section--1">Features</a>
+          <a class="nav__link" href="#section--2">Operations</a>
+          <a class="nav__link" href="#section--3">Testimonials</a>
+          <a class="nav__link nav__link--btn btn--show-modal" href="#">Open account</a>
+        </div>
+        <a href="javascript:void(0);" class="menu-icon" onclick="myFunction()">&#9776;</a>
+      </div>
+    </div>
 
     <div class="header__title">
       <h1>
@@ -84,7 +110,7 @@
           quibusdam!
         </p>
       </div>
-      <img src="img/grow-lazy.jpg" data-src="img/grow.jpg" alt="Plant" class="features__img lazy-img" />
+      <img src="img/grow-lazy.jpg" data-src="img/grow.jpg" alt="Plant" class="features__img lazy-img img-2" />
 
       <img src="img/card-lazy.jpg" data-src="img/card.jpg" alt="Credit card" class="features__img lazy-img" />
       <div class="features__feature">
