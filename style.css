@@ -280,6 +280,7 @@ h4 {
 }
 
 .operations__tab span {
+  color: black;
   margin-right: 1rem;
   font-weight: 600;
   display: inline-block;
@@ -742,6 +743,10 @@ button span {
     margin-bottom: 10px;
   }
 
+  .header {
+    margin-bottom: 6rem;
+  }
+
   .header__title {
     display: flex;
     flex-direction: column;
@@ -760,6 +765,9 @@ button span {
     grid-template-columns: 1fr;
   }
 
+  .features__feature {
+    width: 85%;
+  }
   .img-2 {
     grid-row: 3/4;
   }
@@ -783,7 +791,7 @@ button span {
 
   .slider,
   .slide {
-    height: 88rem;
+    height: 80rem;
   }
 
   .operations__tab {
@@ -793,11 +801,17 @@ button span {
   .testimonial {
     width: 75%;
     height: 80%;
+    text-align: center;
   }
 
   .testimonial::before {
     font-size: 7rem;
     left: -3.8rem;
+  }
+
+  blockquote {
+    font-size: 15px !important;
+    padding: 0 10px;
   }
 
   .slider__btn {
@@ -828,5 +842,6 @@ button span {
 
   .modal__form button {
     margin-top: 1.7rem;
+    color: black;
   }
 }
