@@ -97,11 +97,6 @@ p {
   color: #666;
 }
 
-/* This is BAD for accessibility! Don't do in the real world! */
-button:focus {
-  outline: none;
-}
-
 img {
   transition: filter 0.5s;
 }
@@ -369,14 +364,16 @@ h4 {
   fill: var(--color-tertiary);
 }
 
+button span {
+  color: black;
+}
+
 /* SLIDER */
 .slider {
   max-width: 100rem;
   height: 50rem;
   margin: 0 auto;
   position: relative;
-
-  /* IN THE END */
   overflow: hidden;
 }
 
@@ -541,6 +538,7 @@ h4 {
 .section--sign-up .btn {
   font-size: 1.9rem;
   padding: 2rem 5rem;
+  color: black;
 }
 
 /* FOOTER */
@@ -706,7 +704,8 @@ h4 {
   padding: 5px 10px;
 }
 
-.dropdown:hover .dropdown-content {
+/* Show/hide mobile menu */
+.activate-mobile-menu {
   display: block;
 }
 
@@ -808,5 +807,26 @@ h4 {
 
   .footer__nav {
     flex-direction: column;
+  }
+
+  /* Modal */
+  .modal {
+    width: 90%;
+    padding: 3rem;
+  }
+
+  .modal__header {
+    font-size: 2.5rem;
+  }
+
+  .modal__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .modal__form button {
+    margin-top: 1.7rem;
   }
 }

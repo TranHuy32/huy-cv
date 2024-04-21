@@ -1,16 +1,25 @@
 'use strict';
+// Show/hide mobile navigation
+function toggleMenu() {
+  const dropdown = document.querySelector('.dropdown-content');
+  if (dropdown.className.includes('activate-mobile-menu')) {
+    dropdown.className = 'dropdown-content';
+  } else {
+    dropdown.className += ' activate-mobile-menu';
+  }
+}
+
+document.addEventListener('click', function (e) {
+  const dropdown = document.querySelector('.dropdown-content');
+  const menuIcon = document.querySelector('.menu-icon');
+  console.log(e.target);
+  if (!e.target.contains(dropdown) && !e.target.contains(menuIcon)) {
+    console.log('a');
+    dropdown.className = 'dropdown-content';
+  }
+});
 
 window.addEventListener('load', function (e) {
-  // Mobile navigation
-  function myFunction() {
-    var x = document.querySelector('.mobilenav');
-    if (x.className === 'mobilenav') {
-      x.className += ' responsive';
-    } else {
-      x.className = 'mobilenav';
-    }
-  }
-
   // Modal window ----------------------------------------------------
   const modal = document.querySelector('.modal');
   const overlay = document.querySelector('.overlay');
