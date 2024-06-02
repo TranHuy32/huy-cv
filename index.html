@@ -1,340 +1,1213 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="shortcut icon" type="image/png" href="img/icon.png" />
-
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Bankist | When Banking meets Minimalist</title>
-  <script src="script.js"></script>
-  <script type="text/javascript">
-    window.onload = function() {
-        window.setTimeout(
-            function() { window.scrollTo(0,0); },
-            10
-        );
-    };
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/icon.png" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Mia's CV</title>
+    <script src="js/script.js"></script>
+    <script type="text/javascript">
+      window.onload = function () {
+        window.setTimeout(function () {
+          window.scrollTo(0, 0);
+        }, 10);
+      };
     </script>
-</head>
+  </head>
 
-<body>
-  <header class="header">
-    <!-- PC/tablet nav -->
-    <nav class="nav">
-      <img src="img/logo.png" alt="Bankist logo" class="nav__logo" id="logo" designer='Mia' data-version-number="3.0" />
-      <ul class="nav__links">
-        <li class="nav__item">
-          <a class="nav__link" href="#section--1">Features</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#section--2">Operations</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#section--3">Testimonials</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link nav__link--btn btn--show-modal" href="#">Open account</a>
-        </li>
-      </ul>
-    </nav>
+  <body>
+    <div class="container-fluid px-0">
+      <!-- INTRODUCTION -->
+      <header class="header w-100">
+        <div class="intro-overlay"></div>
+        <nav class="navbar navbar-expand-sm py-1">
+          <div class="container-fluid w-100">
+            <a class="navbar-brand" href="#"></a>
+            <button
+              class="navbar-toggler navbar-icon"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <div class="navbar-toggler-icon h3 mb-0"></div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="nav__links navbar-nav w-100 mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#section--1">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#section--2">Skills</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#section--3">Experience</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#section--4">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#section--5">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
 
-    <!-- Mobile nav -->
-    <div class="mobilenav">
-      <img src="img/logo.png" alt="Bankist logo" class="nav__logo" id="logo" designer='Mia' data-version-number="3.0" />
-      <div class="dropdown">
-        <!-- <button class="dropbtn">
-          <i class="fa fa-caret-down"></i>
-        </button> -->
-        <div class="dropdown-content">
-          <a class="nav__link" href="#section--1">Features</a>
-          <a class="nav__link" href="#section--2">Operations</a>
-          <a class="nav__link" href="#section--3">Testimonials</a>
-          <a class="nav__link nav__link--btn btn--show-modal" href="#">Open account</a>
+        <section
+          class="d-flex flex-column align-items-center justify-content-center"
+          id="welcome-section"
+        >
+          <div id="hello">Hello world,</div>
+          <h1>Ly Nguyen (Mia)</h1>
+          <div class="text-typing anim-typewriter">Web developer</div>
+          <button type="button" class="btn--scroll-to btn btn-sm px-3 py-2">
+            <span>More about me</span><i class="bi bi-chevron-down ms-1"></i>
+          </button>
+        </section>
+
+        <section
+          class="social-icons d-flex align-items-center justify-content-center gap-5"
+        >
+          <a href="https://github.com/lynguyen-mia" target="”_blank”">
+            <i class="bi bi-github h2"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/lylymia" target="”_blank”">
+            <i class="bi bi-linkedin h2"></i>
+          </a>
+          <a href="https://lyly21.substack.com" target="”_blank”">
+            <i class="bi bi-substack h2"></i>
+          </a>
+        </section>
+      </header>
+
+      <!-- ABOUT ME -->
+      <section class="section" id="section--1">
+        <div class="section__title" id="about-me">
+          <div class="d-flex align-items-center gap-3">
+            <img src="images/ava1.jpg" alt="my avatar" />
+            <div>
+              <h2 class="section__header">ABOUT ME</h2>
+              <!-- <div class="section__subtitle">
+              Work until I no longer have to introduce myself.
+            </div> -->
+              <div class="lines"></div>
+            </div>
+          </div>
+
+          <div class="row mt-5">
+            <div class="col-lg-4">
+              <ul class="list-unstyled">
+                <li><span class="fw-bold">Name</span> : Nguyen Thi Huong Ly</li>
+                <li><span class="fw-bold">Gender</span> : Female</li>
+                <li>
+                  <span class="fw-bold">Birthday</span> : 21 February 1995
+                </li>
+                <li>
+                  <span class="fw-bold">Email</span> : huongly2195@gmail.com
+                </li>
+                <li><span class="fw-bold">Address</span> : Hanoi, Vietnam</li>
+                <li>
+                  <span class="fw-bold">Hobbies</span> :
+                  <div class="d-inline-flex gap-2">
+                    <i class="bi bi-music-note-beamed"></i
+                    ><i class="bi bi-film"></i><i class="bi bi-book-half"></i
+                    ><i class="bi bi-person-walking"></i>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-8 section__description">
+              My background in ad network consulting might not spark my passion
+              for crafting messages, but it did ignite a curiosity for the logic
+              behind the clicks. Then, I stumbled upon the world of code, which
+              fueled my desire to leverage programming to solve real-world
+              problems. Now, I'm on a quest to become a software engineer,
+              actively stockpiling a versatile skillset like a squirrel and
+              approaching challenges with a healthy dose of enthusiasm. I bring
+              strong work ethic and perpetual learning spirit to the table, let
+              me know if it's the piece that you're seeking for your team!
+            </div>
+          </div>
         </div>
-        <a href="javascript:void(0);" class="menu-icon" onclick="toggleMenu()">&#9776;</a>
-      </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="section" id="section--2">
+        <div class="section__title">
+          <h2 class="section__header">SKILLS</h2>
+          <!-- <div class="section__subtitle">
+          Superman would be jealous.
+        </div> -->
+          <div class="lines"></div>
+        </div>
+
+        <div id="skills">
+          <!-- Frontend -->
+          <div class="row mt-5 g-0">
+            <h3
+              class="skill-title fs-5 col-lg-3 d-flex ps-0 align-items-center"
+            >
+              <i class="bi bi-laptop h3 mb-0 me-2"></i>Frontend
+            </h3>
+            <div
+              class="skill-logo d-flex col-lg-9 ps-0 pb-4 ms-0 border-bottom border-secondary-subtle"
+            >
+              <div class="card">
+                <img src="images/skills/javascript.svg" alt="javascript" />
+                <h4>Javascript</h4>
+              </div>
+              <div class="card">
+                <img src="images/skills/html.svg" alt="html" />
+                <h4>HTML</h4>
+              </div>
+              <div class="card">
+                <img src="images/skills/css3.svg" alt="css" />
+                <h4>CSS</h4>
+              </div>
+              <div class="card">
+                <img src="images/skills/bootstrap.svg" alt="bootstrap" />
+                <h4>Bootstrap</h4>
+              </div>
+              <div class="card">
+                <img src="images/skills/reactjs.svg" alt="reactjs" />
+                <h4>ReactJS</h4>
+              </div>
+              <div class="card">
+                <img src="images/skills/redux.svg" alt="redux" />
+                <h4>Redux</h4>
+              </div>
+            </div>
+          </div>
+          <!-- Backend -->
+          <div class="row g-0">
+            <h3
+              class="skill-title fs-5 col-lg-3 ps-0 d-flex align-items-center"
+            >
+              <i class="bi bi-database h3 mb-0 me-2"></i>Backend
+            </h3>
+            <div
+              class="skill-logo d-flex col-lg-9 ps-0 pb-4 ms-0 border-bottom border-secondary-subtle"
+            >
+              <div class="card">
+                <img src="images/skills/node-js.svg" alt="nodejs" />
+                <h4>NodeJS</h4>
+              </div>
+              <div class="card">
+                <img src="images/skills/express.svg" alt="expressjs" />
+                <h4>ExpressJS</h4>
+              </div>
+              <div class="card">
+                <img src="images/skills/mongodb.svg" alt="mongodb" />
+                <h4>MongoDB</h4>
+              </div>
+              <div class="card">
+                <img src="images/skills/mysql.svg" alt="mysql" />
+                <h4>MySQL</h4>
+              </div>
+              <div class="card">
+                <img src="images/skills/postgresql.svg" alt="postgresql" />
+                <h4>PostgreSQL</h4>
+              </div>
+              <div class="card">
+                <img src="images/skills/mongoose.png" alt="mongoose" />
+                <h4>Mongoose</h4>
+              </div>
+              <div class="card">
+                <img src="images/skills/sequelize.svg" alt="sequelize" />
+                <h4>Sequelize</h4>
+              </div>
+            </div>
+          </div>
+          <!-- Tools -->
+          <div class="row g-0">
+            <h3
+              class="skill-title fs-5 col-lg-3 ps-0 d-flex align-items-center"
+            >
+              <i class="bi bi-gear h3 mb-0 me-2"></i>Tools
+            </h3>
+            <div
+              class="skill-logo d-flex col-lg-9 ps-0 pb-4 ms-0 border-bottom border-secondary-subtle"
+            >
+              <div class="card">
+                <img src="images/skills/git.svg" alt="git" />
+                <h4>Git</h4>
+              </div>
+              <div class="card">
+                <img src="images/skills/github.svg" alt="github" />
+                <h4>Github</h4>
+              </div>
+              <div class="card">
+                <img src="images/skills/jira.svg" alt="jira" />
+                <h4>Jira</h4>
+              </div>
+              <div class="card">
+                <img src="images/skills/trello.svg" alt="trello" />
+                <h4>Trello</h4>
+              </div>
+            </div>
+          </div>
+          <!-- Soft skills -->
+          <div class="row g-0">
+            <h3
+              class="skill-title fs-5 col-lg-3 ps-0 d-flex align-items-center"
+            >
+              <i class="bi bi-person-plus h3 mb-0 me-2"></i>Soft skills
+            </h3>
+            <div class="soft-skill-logo d-flex col-lg-9 ps-0 pb-4 ms-0">
+              <div class="box">
+                <h4>Problem solving</h4>
+                <div class="box-explanation">
+                  <div>
+                    Excel at tackling problems methodically, pinpointing root
+                    causes for lasting solutions
+                  </div>
+                </div>
+              </div>
+              <div class="box">
+                <h4>Languages</h4>
+                <div class="box-explanation">
+                  <ul class="text-start">
+                    <li>English: professional</li>
+                    <li>Mandarin: basic</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="box">
+                <h4>Teamwork</h4>
+                <div class="box-explanation">
+                  <div>
+                    Navigate collaborative environments with strong listening
+                    and communication skills
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section class="section" id="section--3">
+        <div class="section__title">
+          <h2 class="section__header">EXPERIENCE</h2>
+          <!-- <h3 class="section__subtitle">
+          Yes, I've been around.
+        </h3> -->
+          <div class="lines"></div>
+        </div>
+
+        <div id="experience">
+          <div
+            class="experience__tab-container d-flex justify-content-center gap-5 mb-5"
+          >
+            <button
+              class="experience-title__tab experience-title__tab--1 experience-title__tab--active"
+              data-tab="1"
+            >
+              Experience
+            </button>
+            <button
+              class="experience-title__tab experience-title__tab--2"
+              data-tab="2"
+            >
+              Education
+            </button>
+            <button
+              class="experience-title__tab experience-title__tab--3"
+              data-tab="3"
+            >
+              Certificate
+            </button>
+          </div>
+          <div
+            class="experience__content-container d-flex justify-content-center"
+          >
+            <!-- Experience tab -->
+            <div
+              class="experience__content experience__content--1 experience__content--active gap-3"
+            >
+              <div class="job-line"></div>
+              <div class="exp-item mb-3">
+                <div class="row gx-5 gy-4">
+                  <div class="col-lg-3">
+                    <p class="job-timeline fw-bold mb-2 text-sm">
+                      Apr 2021 – Sep 2022
+                    </p>
+                  </div>
+                  <div class="col-lg-9">
+                    <h2 class="h5 mb-0 text-uppercase">Geniee inc.</h2>
+                    <div class="text-sm mb-3">Web Business Team Leader</div>
+                    <i class="job__show-icon bi bi-chevron-down"></i>
+                    <ul class="job-content hide text-muted mt-3">
+                      <li>
+                        Led a high-performing team that generated $0.5 million
+                        dollars in monthly revenue.
+                      </li>
+                      <li>
+                        Tracked individual and overall web team's key metrics,
+                        dealing with SQL for data gathering.
+                      </li>
+                      <li>
+                        Built training documents and conducted trainings on SSP
+                        and Google products for new members.
+                      </li>
+                      <li>
+                        Provided publishers with strategic consulting for
+                        maximizing Ad Networks and Google ad revenue.
+                      </li>
+                      <li>
+                        Cooperated with with other team leads to improve
+                        workflows & prevent future problems.
+                      </li>
+                      <li class="job-points">
+                        <span>Learning points</span>: analytical skills,
+                        cross-functional collaboration, conflict resolution.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="exp-item mb-3">
+                <div class="row gx-5 gy-4">
+                  <div class="col-lg-3">
+                    <p class="job-timeline fw-bold mb-2 text-sm">
+                      Oct 2019 – Mar 2021
+                    </p>
+                  </div>
+                  <div class="col-lg-9">
+                    <h2 class="h5 mb-0 text-uppercase">Geniee inc.</h2>
+                    <p class="text-sm mb-3">Google Product Specialist</p>
+                    <i class="job__show-icon bi bi-chevron-down"></i>
+                    <ul class="job-content hide text-muted mt-3">
+                      <li>
+                        Acquired in-depth knowledge of Google's products
+                        (Adsense, Google Ad Manager, Google Analytics).
+                      </li>
+                      <li>
+                        Diagnosed issues with ad creatives and tags, reporting
+                        problems to technicians for swift bug fixes.
+                      </li>
+                      <li>
+                        Collaborated with ad operation team to identify root
+                        causes of problems, contributing to Taiwan market's
+                        twofold rise in ad revenue.
+                      </li>
+                      <li class="job-points">
+                        <span>Learning points</span>: problem solving (root
+                        cause analysis), Google's ad products, technical issue
+                        report.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="exp-item">
+                <div class="row gx-5 gy-4">
+                  <div class="col-lg-3">
+                    <p class="job-timeline fw-bold mb-2 text-sm">
+                      Aug 2017 – Sep 2019
+                    </p>
+                  </div>
+                  <div class="col-lg-9">
+                    <h2 class="h5 mb-0 text-uppercase">Geniee inc.</h2>
+                    <p class="text-sm mb-3">Media Consultant</p>
+                    <i class="job__show-icon bi bi-chevron-down"></i>
+                    <ul class="job-content hide text-muted mt-3">
+                      <li>
+                        Delivered presentations to clients about ad monetization
+                        solutions.
+                      </li>
+                      <li>
+                        Equipped clients with in-depth knowledge of emerging
+                        technical concepts and advertising trends.
+                      </li>
+                      <li>
+                        Scrutinized performance data & deeply involved in ad
+                        delivery optimization from ad tag settings to tag
+                        activation.
+                      </li>
+                      <li>
+                        Maintained effective and timely communication between
+                        client and ad operation/tech team to ensure seamless ad
+                        operation.
+                      </li>
+                      <li class="job-points">
+                        <span>Learning points</span>: presentation skill,
+                        self-learning skill, ad optimization.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Education tab -->
+            <div class="experience__content experience__content--2">
+              <div class="edu-item row gx-0 mb-3">
+                <div
+                  class="col-lg-3 edu-timeline d-flex justify-content-center align-items-center"
+                >
+                  <div class="fw-bold mb-2 fs-5">2023 – 2024</div>
+                </div>
+                <div class="edu-info col-lg-9">
+                  <h2 class="h5 mb-0 text-uppercase">FUNIX</h2>
+                  <div class="text-sm mb-3">
+                    Web Fullstack Developer Program
+                  </div>
+                  <div class="d-lg-flex gap-5">
+                    <div>
+                      <div>HTML-CSS: GPA 9.7/10</div>
+                      <div>Javascript: GPA 9.1/10</div>
+                    </div>
+                    <div>
+                      <div>ReactJS: GPA 9.3/10</div>
+                      <div>NodeJS: GPA 9.6/10</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="edu-item row gx-0 mb-3">
+                <div
+                  class="col-lg-3 edu-timeline d-flex justify-content-center align-items-center"
+                >
+                  <div class="fw-bold mb-2 fs-5">2013 – 2017</div>
+                </div>
+                <div class="edu-info col-lg-9">
+                  <h2 class="h5 mb-0 text-uppercase">
+                    FOREIGN TRADE UNIVERSITY
+                  </h2>
+                  <div class="text-sm mb-3">
+                    Bachelor - International Business and Economics
+                  </div>
+                  <div>GPA: 3.46/4.0</div>
+                  <div>Degree classification: very good</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Certificate tab -->
+            <div class="experience__content experience__content--3">
+              <div class="edu-item row gx-0 mb-3">
+                <div
+                  class="col-lg-3 edu-timeline d-flex justify-content-center align-items-center"
+                >
+                  <div class="fw-bold mb-2 fs-5">Aug, 2022</div>
+                </div>
+                <div class="edu-info col-lg-9">
+                  <h2 class="h5 mb-0 text-uppercase">Hackerank</h2>
+                  <div class="text-sm mb-3">SQL intermediate</div>
+                </div>
+              </div>
+              <div class="edu-item row gx-0 mb-3">
+                <div
+                  class="col-lg-3 edu-timeline d-flex justify-content-center align-items-center"
+                >
+                  <div class="fw-bold mb-2 fs-5">Jan, 2020</div>
+                </div>
+                <div class="edu-info col-lg-9">
+                  <h2 class="h5 mb-0 text-uppercase">Google</h2>
+                  <div class="text-sm mb-3">Advanced Google Analytics</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="section" id="section--4">
+        <div class="section__title">
+          <h2 class="section__header">PROJECTS</h2>
+          <!-- <h3 class="section__subtitle">
+          Lazy isn't in my vocabulary.
+        </h3> -->
+          <div class="lines"></div>
+        </div>
+
+        <div id="projects" class="mt-5">
+          <div class="grid">
+            <!-- #region Project 1 -->
+            <div
+              class="projects_card"
+              data-bs-toggle="modal"
+              data-bs-target="#project1"
+            >
+              <img
+                src="./images/projects/ecommerce.png"
+                alt="ecommerce"
+                class="project-img"
+              />
+              <div class="project-title">
+                Ecommerce website
+                <div class="project-label">Fullstack</div>
+              </div>
+            </div>
+            <div
+              class="modal fade"
+              id="project1"
+              tabindex="-1"
+              aria-labelledby="project1Label"
+              aria-hidden="true"
+            >
+              <div
+                class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable"
+              >
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="project1Label">
+                      Ecommerce website
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="project-info">
+                      <ul>
+                        <li>
+                          <span class="fw-bold">Tech stack</span>: MongoDB,
+                          ExpressJS, ReactJs, NodeJs
+                        </li>
+                        <li>
+                          <span class="fw-bold">Description</span>: This project
+                          is a full-stack web application featuring two
+                          responsive frontend interfaces (client & admin) for
+                          product browsing, searching, ordering, and live chat.
+                          On the backend, it handles logic for managing products
+                          and orders.
+                        </li>
+                        <li>
+                          <span class="fw-bold">Key technologies</span>: RESTful
+                          API, websocket (live chat), server-side session (user
+                          authentication), data security (password encryption,
+                          user authorization), product management (CRUD
+                          operations).
+                        </li>
+                        <li>
+                          <div class="fw-bold">Products:</div>
+                          <!-- prettier-ignore -->
+                          <ul>
+                            <li>Client frontend: <a href="https://digital-ecommerce-react.netlify.app/" target="_blank">demo</a> - <a href="https://github.com/lynguyen-mia/ecommerce-react-app" target="_blank">source code</a></li>
+                            <li>Admin frontend: <a href="https://admin-ecommerce-react.netlify.app/" target="_blank">demo</a> - <a href="https://github.com/lynguyen-mia/ecommerce-react-admin-app" target="_blank">source code</a></li>
+                            <li>Backend: <a href="https://github.com/lynguyen-mia/ecommerce-node-app" target="_blank">source code</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <div class="project-details mt-4">
+                        <figure
+                          class="d-flex flex-column justify-content-center align-items-center"
+                        >
+                          <img
+                            src="./images/projects/ecommerce.png"
+                            alt="ecommerce client app"
+                            class="project-details-img"
+                          />
+                          <figcaption>Client website</figcaption>
+                        </figure>
+                        <figure
+                          class="d-flex flex-column justify-content-center align-items-center"
+                        >
+                          <img
+                            src="./images/projects/ecommerce-admin.png"
+                            alt="ecommerce admin app"
+                            class="project-details-img"
+                          />
+                          <figcaption>Admin website</figcaption>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- #endregion -->
+            <!-- #region Project 2 -->
+            <div
+              class="projects_card"
+              data-bs-toggle="modal"
+              data-bs-target="#project2"
+            >
+              <img
+                src="./images/projects/hotel-client.png"
+                alt="hotel booking website"
+                class="project-img"
+              />
+              <div class="project-title">
+                Hotel booking website
+                <div class="project-label">Fullstack</div>
+              </div>
+            </div>
+            <div
+              class="modal fade"
+              id="project2"
+              tabindex="-1"
+              aria-labelledby="project2Label"
+              aria-hidden="true"
+            >
+              <div
+                class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable"
+              >
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="project2Label">
+                      Hotel booking website
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="project-info">
+                      <ul>
+                        <li>
+                          <span class="fw-bold">Tech stack</span>: MongoDB,
+                          ExpressJS, ReactJs, NodeJs
+                        </li>
+                        <li>
+                          <span class="fw-bold">Description</span>: This project
+                          is a full-stack web application featuring a responsive
+                          client interface for hotel browsing, searching,
+                          booking available rooms and an admin panel for room,
+                          hotel and booking management. On the backend, it
+                          handles logic for managing hotels and rooms.
+                        </li>
+                        <li>
+                          <span class="fw-bold">Key technologies</span>: RESTful
+                          API, token authentication (JWT), user authorization,
+                          data encryption, room & hotel management (CRUD).
+                        </li>
+                        <li>
+                          <div class="fw-bold">Products:</div>
+                          <!-- prettier-ignore -->
+                          <ul>
+                            <li>Client frontend: <a href="https://hotel-booking-reactjs.netlify.app" target="_blank">demo</a> - <a href="https://github.com/lynguyen-mia/hotel-booking-react-client-app" target="_blank">source code</a></li>
+                            <li>Admin frontend: <a href="https://hotel-booking-reactjs-admin.netlify.app" target="_blank">demo</a> - <a href="https://github.com/lynguyen-mia/hotel-booking-react-admin-app" target="_blank">source code</a></li>
+                            <li>Backend: <a href="https://github.com/lynguyen-mia/hotel-booking-node-app" target="_blank">source code</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <div class="project-details mt-4">
+                        <figure
+                          class="d-flex flex-column justify-content-center align-items-center"
+                        >
+                          <img
+                            src="./images/projects/hotel-client-1.png"
+                            alt="hotel client app"
+                            class="project-details-img"
+                          />
+                          <figcaption>Client website</figcaption>
+                        </figure>
+                        <figure
+                          class="d-flex flex-column justify-content-center align-items-center"
+                        >
+                          <img
+                            src="./images/projects/hotel-admin.png"
+                            alt="hotel admin app"
+                            class="project-details-img"
+                          />
+                          <figcaption>Admin website</figcaption>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- #endregion -->
+            <!-- #region Project 3 -->
+            <div
+              class="projects_card"
+              data-bs-toggle="modal"
+              data-bs-target="#project3"
+            >
+              <img
+                src="./images/projects/movie-1.png"
+                alt="movie site"
+                class="project-img"
+              />
+              <div class="project-title">
+                Movie website
+                <div class="project-label">Frontend</div>
+              </div>
+            </div>
+            <div
+              class="modal fade"
+              id="project3"
+              tabindex="-1"
+              aria-labelledby="project3Label"
+              aria-hidden="true"
+            >
+              <div
+                class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable"
+              >
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="project3Label">
+                      Movie website
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="project-info">
+                      <ul>
+                        <li>
+                          <span class="fw-bold">Tech stack</span>: ReactJS,
+                          HTML, CSS
+                        </li>
+                        <li>
+                          <span class="fw-bold">Description</span>: a movie app
+                          for displaying movie information by categories &
+                          searching movies by keywords.
+                        </li>
+                        <li>
+                          <span class="fw-bold">Key technologies</span>: API
+                          integration, state management (useState, context),
+                          custom hooks, CSS modules.
+                        </li>
+                        <li>
+                          <div class="fw-bold">Products:</div>
+                          <!-- prettier-ignore -->
+                          <ul>
+                            <li><a href="https://movie-reactjs-v2.netlify.app" target="_blank">Demo</a> - <a href="https://github.com/lynguyen-mia/movie-react-app" target="_blank">source code</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <div class="project-details mt-4">
+                        <figure
+                          class="d-flex flex-column justify-content-center align-items-center"
+                        >
+                          <img
+                            src="./images/projects/movie-1.png"
+                            alt="movie site 1"
+                            class="project-details-img"
+                          />
+                          <figcaption>Image 1 : movie website</figcaption>
+                        </figure>
+                        <figure
+                          class="d-flex flex-column justify-content-center align-items-center"
+                        >
+                          <img
+                            src="./images/projects/movie-2.png"
+                            alt="movie site 2"
+                            class="project-details-img"
+                          />
+                          <figcaption>Image 2 : movie information</figcaption>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- #endregion -->
+            <!-- #region Project 4 -->
+            <div
+              class="projects_card"
+              data-bs-toggle="modal"
+              data-bs-target="#project4"
+            >
+              <img
+                src="./images/projects/LP.png"
+                alt="landing page"
+                class="project-img"
+              />
+              <div class="project-title">
+                Product landing page
+                <div class="project-label">Fullstack</div>
+              </div>
+            </div>
+            <div
+              class="modal fade"
+              id="project4"
+              tabindex="-1"
+              aria-labelledby="project4Label"
+              aria-hidden="true"
+            >
+              <div
+                class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable"
+              >
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="project4Label">
+                      Product landing page
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="project-info">
+                      <ul>
+                        <li>
+                          <span class="fw-bold">Tech stack</span>: Javascript,
+                          HTML, CSS
+                        </li>
+                        <li>
+                          <span class="fw-bold">Description</span>: A responsive
+                          product landing page with features and testimonial
+                          sections.
+                        </li>
+                        <li>
+                          <span class="fw-bold">Key features</span>: sticky
+                          navigation, lazy loading, tabbed components, sliders.
+                        </li>
+                        <li>
+                          <div class="fw-bold">Products:</div>
+                          <!-- prettier-ignore -->
+                          <ul>
+                            <li><a href="https://lynguyen-mia.github.io/JS-banking-page/" target="_blank">Demo</a> - <a href="https://github.com/lynguyen-mia/JS-banking-page" target="_blank">source code</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <div class="project-details mt-4">
+                        <figure
+                          class="d-flex flex-column justify-content-center align-items-center"
+                        >
+                          <img
+                            src="./images/projects/LP.png"
+                            alt="landing page 1"
+                            class="project-details-img"
+                          />
+                          <figcaption>Image 1 : landing page</figcaption>
+                        </figure>
+                        <figure
+                          class="d-flex flex-column justify-content-center align-items-center"
+                        >
+                          <img
+                            src="./images/projects/LP1.png"
+                            alt="landing page 2"
+                            class="project-details-img"
+                          />
+                          <figcaption>Image 2 : testimonial slider</figcaption>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- #endregion -->
+            <!-- #region Project 5 -->
+            <div
+              class="projects_card"
+              data-bs-toggle="modal"
+              data-bs-target="#project5"
+            >
+              <img
+                src="./images/projects/pet.png"
+                alt="pet management app"
+                class="project-img"
+              />
+              <div class="project-title">
+                Pet management website
+                <div class="project-label">Fullstack</div>
+              </div>
+            </div>
+            <div
+              class="modal fade"
+              id="project5"
+              tabindex="-1"
+              aria-labelledby="project5Label"
+              aria-hidden="true"
+            >
+              <div
+                class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable"
+              >
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="project5Label">
+                      Pet management website
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="project-info">
+                      <ul>
+                        <li>
+                          <span class="fw-bold">Tech stack</span>: Javascript,
+                          HTML, CSS
+                        </li>
+                        <li>
+                          <span class="fw-bold">Description</span>: an app which
+                          helps create, read, update, and delete pet information
+                          ; manage pet breeds, download data for offline access,
+                          and effortlessly search for pets based on various
+                          criteria.
+                        </li>
+                        <li>
+                          <span class="fw-bold">Key technologies</span>: DOM
+                          manipulation, event handling, local storage.
+                        </li>
+                        <li>
+                          <div class="fw-bold">Products:</div>
+                          <!-- prettier-ignore -->
+                          <ul>
+                            <li><a href="https://lynguyen-mia.github.io/pet-management-app" target="_blank">Demo</a> - <a href="https://github.com/lynguyen-mia/pet-management-app" target="_blank">source code</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <div class="project-details mt-4">
+                        <figure
+                          class="d-flex flex-column justify-content-center align-items-center"
+                        >
+                          <img
+                            src="./images/projects/pet1.png"
+                            alt="pet management app"
+                            class="project-details-img"
+                          />
+                          <figcaption>
+                            Image 1 : pet search functionality
+                          </figcaption>
+                        </figure>
+                        <figure
+                          class="d-flex flex-column justify-content-center align-items-center"
+                        >
+                          <img
+                            src="./images/projects/pet2.png"
+                            alt="pet management app"
+                            class="project-details-img"
+                          />
+                          <figcaption>Image 2 : breed management</figcaption>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- #endregion -->
+            <!-- #region Project 6 -->
+            <div
+              class="projects_card"
+              data-bs-toggle="modal"
+              data-bs-target="#project6"
+            >
+              <img
+                src="./images/projects/news.png"
+                alt="news interface"
+                class="project-img"
+              />
+              <div class="project-title">
+                To-do list & news website
+                <div class="project-label">Fullstack</div>
+              </div>
+            </div>
+            <div
+              class="modal fade"
+              id="project6"
+              tabindex="-1"
+              aria-labelledby="project6Label"
+              aria-hidden="true"
+            >
+              <div
+                class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable"
+              >
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="project6Label">
+                      To-do list & news website
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="project-info">
+                      <ul>
+                        <li>
+                          <span class="fw-bold">Tech stack</span>: Javascript,
+                          HTML, CSS
+                        </li>
+                        <li>
+                          <span class="fw-bold">Description</span>: This
+                          JavaScript application combines two powerful
+                          functionalities:
+                          <ul>
+                            <li>
+                              Global news consumption (only work in the
+                              development environment): integrates with a news
+                              API to access and search global news articles, but
+                              currently functions only in the development
+                              environment.
+                            </li>
+                            <li>
+                              To-do management: a user-friendly to-do list that
+                              allows you to efficiently manage your tasks using
+                              create, read, update, and delete (CRUD)
+                              operations.
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <span class="fw-bold">Key technologies</span>: API
+                          integration, async operations, promises.
+                        </li>
+                        <li>
+                          <span class="fw-bold">Products:</span>
+                          <a
+                            href="https://github.com/lynguyen-mia/news-app"
+                            target="_blank"
+                            >source code</a
+                          >
+                        </li>
+                      </ul>
+                      <div class="project-details mt-4">
+                        <figure
+                          class="d-flex flex-column justify-content-center align-items-center"
+                        >
+                          <img
+                            src="./images/projects/news.png"
+                            alt="news interface"
+                            class="project-details-img"
+                          />
+                          <figcaption>Image 1 : news browsing</figcaption>
+                        </figure>
+                        <figure
+                          class="d-flex flex-column justify-content-center align-items-center"
+                        >
+                          <img
+                            src="./images/projects/news1.png"
+                            alt="to do list interface"
+                            class="project-details-img"
+                          />
+                          <figcaption>Image 2 : to-do list</figcaption>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- #endregion -->
+          </div>
+          <button type="button" class="projects__see-more">
+            <a href="https://github.com/lynguyen-mia" target="_blank"
+              >More projects</a
+            >
+          </button>
+        </div>
+      </section>
+      <!-- #endregion -->
+
+      <!-- CONTACT -->
+      <section class="section section--contact" id="section--5">
+        <div class="section__title">
+          <h2 class="section__header">CONTACT</h2>
+          <div class="section__subtitle">Call me, maybe</div>
+          <div class="lines"></div>
+        </div>
+        <div class="contact-me d-lg-flex mt-5 gap-5 justify-content-center">
+          <div class="contact-box col-lg-3">
+            <a
+              class="contact-item px-4 py-5 text-center d-block"
+              href="mailto:huongly2195@example.com"
+            >
+              <i class="bi bi-envelope-at-fill h3"></i>
+              <h4 class="contact-item-title h5 text-uppercase mt-3">Email</h4>
+              <p class="text-sm mb-0">huongly2195@gmail.com</p>
+            </a>
+          </div>
+          <div class="contact-box col-lg-3" href="#!">
+            <a class="contact-item px-4 py-5 text-center d-block">
+              <i class="bi bi-geo-alt-fill h3"></i>
+              <h4 class="contact-item-title h5 text-uppercase mt-3">
+                Location
+              </h4>
+              <p class="text-sm mb-0">Hanoi, Vietnam</p>
+            </a>
+          </div>
+          <div class="contact-box col-lg-3">
+            <a
+              class="contact-item px-4 py-5 text-center d-block"
+              href="https://www.linkedin.com/in/lylymia"
+              target="_blank"
+            >
+              <i class="bi bi-linkedin h3"></i>
+              <h4 class="contact-item-title h5 text-uppercase mt-3">
+                Linkedin
+              </h4>
+              <p class="text-sm mb-0">lylymia</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer" id="footer">
+        <div class="intro-overlay"></div>
+        <div class="footer-info d-flex flex-column align-items-center">
+          <h1 class="name-signature">Ly Nguyen</h1>
+          <div class="name-signature_job mb-4">Web developer</div>
+          <div class="text-center right-reserve">
+            © All rights reserved. Template designed by Ly Nguyen.
+          </div>
+        </div>
+        <section
+          class="social-icons d-flex align-items-center justify-content-center gap-5"
+        >
+          <a href="https://github.com/lynguyen-mia" target="”_blank”">
+            <i class="bi bi-github h2"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/lylymia" target="”_blank”">
+            <i class="bi bi-linkedin h2"></i>
+          </a>
+          <a href="https://lyly21.substack.com" target="”_blank”">
+            <i class="bi bi-substack h2"></i>
+          </a>
+        </section>
+      </footer>
     </div>
-
-    <div class="header__title">
-      <h1>
-        When
-        <!-- Green highlight effect -->
-        <span class="highlight">banking</span>
-        meets<br />
-        <span class="highlight">minimalist</span>
-      </h1>
-      <h4>A simpler banking experience for a simpler life.</h4>
-      <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
-      <img src="img/hero.png" class="header__img" alt="Minimalist bank items" />
-    </div>
-  </header>
-
-  <section class="section" id="section--1">
-    <div class="section__title">
-      <h2 class="section__description">Features</h2>
-      <h3 class="section__header">
-        Everything you need in a modern bank and more.
-      </h3>
-    </div>
-
-    <div class="features">
-      <img src="img/digital-lazy.jpg" data-src="img/digital.jpg" alt="Computer" class="features__img lazy-img" />
-      <div class="features__feature">
-        <div class="features__icon">
-          <svg>
-            <use xlink:href="img/icons.svg#icon-monitor"></use>
-          </svg>
-        </div>
-        <h5 class="features__header">100% digital bank</h5>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde alias
-          sint quos? Accusantium a fugiat porro reiciendis saepe quibusdam
-          debitis ducimus.
-        </p>
-      </div>
-
-      <div class="features__feature">
-        <div class="features__icon">
-          <svg>
-            <use xlink:href="img/icons.svg#icon-trending-up"></use>
-          </svg>
-        </div>
-        <h5 class="features__header">Watch your money grow</h5>
-        <p>
-          Nesciunt quos autem dolorum voluptates cum dolores dicta fuga
-          inventore ab? Nulla incidunt eius numquam sequi iste pariatur
-          quibusdam!
-        </p>
-      </div>
-      <img src="img/grow-lazy.jpg" data-src="img/grow.jpg" alt="Plant" class="features__img lazy-img img-2" />
-
-      <img src="img/card-lazy.jpg" data-src="img/card.jpg" alt="Credit card" class="features__img lazy-img" />
-      <div class="features__feature">
-        <div class="features__icon">
-          <svg>
-            <use xlink:href="img/icons.svg#icon-credit-card"></use>
-          </svg>
-        </div>
-        <h5 class="features__header">Free debit card included</h5>
-        <p>
-          Quasi, fugit in cumque cupiditate reprehenderit debitis animi enim
-          eveniet consequatur odit quam quos possimus assumenda dicta fuga
-          inventore ab.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="section--2">
-    <div class="section__title">
-      <h2 class="section__description">Operations</h2>
-      <h3 class="section__header">
-        Everything as simple as possible, but no simpler.
-      </h3>
-    </div>
-
-    <div class="operations">
-      <div class="operations__tab-container">
-        <button class="btn operations__tab operations__tab--1 operations__tab--active" data-tab="1">
-          <span>01</span>Instant Transfers
-        </button>
-        <button class="btn operations__tab operations__tab--2" data-tab="2">
-          <span>02</span>Instant Loans
-        </button>
-        <button class="btn operations__tab operations__tab--3" data-tab="3">
-          <span>03</span>Instant Closing
-        </button>
-      </div>
-      <div class="operations__content operations__content--1 operations__content--active">
-        <div class="operations__icon operations__icon--1">
-          <svg>
-            <use xlink:href="img/icons.svg#icon-upload"></use>
-          </svg>
-        </div>
-        <h5 class="operations__header">
-          Tranfser money to anyone, instantly! No fees, no BS.
-        </h5>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
-      </div>
-
-      <div class="operations__content operations__content--2">
-        <div class="operations__icon operations__icon--2">
-          <svg>
-            <use xlink:href="img/icons.svg#icon-home"></use>
-          </svg>
-        </div>
-        <h5 class="operations__header">
-          Buy a home or make your dreams come true, with instant loans.
-        </h5>
-        <p>
-          Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-          cupidatat non proident, sunt in culpa qui officia deserunt mollit
-          anim id est laborum.
-        </p>
-      </div>
-      <div class="operations__content operations__content--3">
-        <div class="operations__icon operations__icon--3">
-          <svg>
-            <use xlink:href="img/icons.svg#icon-user-x"></use>
-          </svg>
-        </div>
-        <h5 class="operations__header">
-          No longer need your account? No problem! Close it instantly.
-        </h5>
-        <p>
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-          officia deserunt mollit anim id est laborum. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-          ea commodo consequat.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="section--3">
-    <div class="section__title section__title--testimonials">
-      <h2 class="section__description">Not sure yet?</h2>
-      <h3 class="section__header">
-        Millions of Bankists are already making their lifes simpler.
-      </h3>
-    </div>
-
-    <div class="slider">
-      <div class="slide slide--1">
-        <div class="testimonial">
-          <h5 class="testimonial__header">Best financial decision ever!</h5>
-          <blockquote class="testimonial__text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Accusantium quas quisquam non? Quas voluptate nulla minima
-            deleniti optio ullam nesciunt, numquam corporis et asperiores
-            laboriosam sunt, praesentium suscipit blanditiis. Necessitatibus
-            id alias reiciendis, perferendis facere pariatur dolore veniam
-            autem esse non voluptatem saepe provident nihil molestiae.
-          </blockquote>
-          <address class="testimonial__author">
-            <img src="img/user-1.jpg" alt="" class="testimonial__photo" />
-            <h6 class="testimonial__name">Aarav Lynn</h6>
-            <p class="testimonial__location">San Francisco, USA</p>
-          </address>
-        </div>
-      </div>
-
-      <div class="slide slide--2">
-        <div class="testimonial">
-          <h5 class="testimonial__header">
-            The last step to becoming a complete minimalist
-          </h5>
-          <blockquote class="testimonial__text">
-            Quisquam itaque deserunt ullam, quia ea repellendus provident,
-            ducimus neque ipsam modi voluptatibus doloremque, corrupti
-            laborum. Incidunt numquam perferendis veritatis neque repellendus.
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo
-            deserunt exercitationem deleniti.
-          </blockquote>
-          <address class="testimonial__author">
-            <img src="img/user-2.jpg" alt="" class="testimonial__photo" />
-            <h6 class="testimonial__name">Miyah Miles</h6>
-            <p class="testimonial__location">London, UK</p>
-          </address>
-        </div>
-      </div>
-
-      <div class="slide slide--3">
-        <div class="testimonial">
-          <h5 class="testimonial__header">
-            Finally free from old-school banks
-          </h5>
-          <blockquote class="testimonial__text">
-            Debitis, nihil sit minus suscipit magni aperiam vel tenetur
-            incidunt commodi architecto numquam omnis nulla autem,
-            necessitatibus blanditiis modi similique quidem. Odio aliquam
-            culpa dicta beatae quod maiores ipsa minus consequatur error sunt,
-            deleniti saepe aliquid quos inventore sequi. Necessitatibus id
-            alias reiciendis, perferendis facere.
-          </blockquote>
-          <address class="testimonial__author">
-            <img src="img/user-3.jpg" alt="" class="testimonial__photo" />
-            <h6 class="testimonial__name">Francisco Gomes</h6>
-            <p class="testimonial__location">Lisbon, Portugal</p>
-          </address>
-        </div>
-      </div>
-
-      <!-- <div class="slide"><img src="img/img-1.jpg" alt="Photo 1" /></div>
-        <div class="slide"><img src="img/img-2.jpg" alt="Photo 2" /></div>
-        <div class="slide"><img src="img/img-3.jpg" alt="Photo 3" /></div>
-        <div class="slide"><img src="img/img-4.jpg" alt="Photo 4" /></div> -->
-      <button class="slider__btn slider__btn--left">&larr;</button>
-      <button class="slider__btn slider__btn--right">&rarr;</button>
-      <div class="dots"></div>
-    </div>
-  </section>
-
-  <section class="section section--sign-up">
-    <div class="section__title">
-      <h3 class="section__header">
-        The best day to join Bankist was one year ago. The second best is
-        today!
-      </h3>
-    </div>
-    <button class="btn btn--show-modal">Open your free account today!</button>
-  </section>
-
-  <footer class="footer">
-    <ul class="footer__nav">
-      <li class="footer__item">
-        <a class="footer__link" href="#">About</a>
-      </li>
-      <li class="footer__item">
-        <a class="footer__link" href="#">Pricing</a>
-      </li>
-      <li class="footer__item">
-        <a class="footer__link" href="#">Terms of Use</a>
-      </li>
-      <li class="footer__item">
-        <a class="footer__link" href="#">Privacy Policy</a>
-      </li>
-      <li class="footer__item">
-        <a class="footer__link" href="#">Careers</a>
-      </li>
-      <li class="footer__item">
-        <a class="footer__link" href="#">Blog</a>
-      </li>
-      <li class="footer__item">
-        <a class="footer__link" href="#">Contact Us</a>
-      </li>
-    </ul>
-    <img src="img/icon.png" alt="Logo" class="footer__logo" />
-  </footer>
-
-  <div class="modal hidden">
-    <button class="btn--close-modal">&times;</button>
-    <h2 class="modal__header">
-      Open your bank account <br />
-      in just <span class="highlight">5 minutes</span>
-    </h2>
-    <form class="modal__form">
-      <label>First Name</label>
-      <input type="text" />
-      <label>Last Name</label>
-      <input type="text" />
-      <label>Email Address</label>
-      <input type="email" />
-      <button class="btn">Next step &rarr;</button>
-    </form>
-  </div>
-  <div class="overlay hidden"></div>
-
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
