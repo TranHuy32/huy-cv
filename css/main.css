@@ -164,7 +164,6 @@ button.navbar-toggler {
 
 /* HEADER */
 .header {
-  padding: 0 3rem;
   height: 100vh;
   display: flex;
   min-height: 700px;
@@ -754,12 +753,16 @@ button.navbar-toggler {
   }
 
   .section {
-    padding: 6rem 3rem;
+    padding: 3rem 1.5rem;
   }
 
   #experience .experience__tab-container {
     width: 100%;
     gap: 10px !important;
+  }
+
+  #experience .experience__content-container {
+    margin-right: 0;
   }
 
   #experience .experience-title__tab {
@@ -772,9 +775,23 @@ button.navbar-toggler {
     font-size: 15px;
   }
 
+  #experience .exp-item {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  #experience .job-content li {
+    font-size: 14px !important;
+  }
+
   .experience__content--active {
     display: flex;
     flex-direction: column;
+  }
+
+  #projects .modal-dialog,
+  #projects .modal-content {
+    height: 550px !important;
   }
 
   #projects .grid {
