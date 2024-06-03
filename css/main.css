@@ -700,6 +700,13 @@ button.navbar-toggler {
     font-size: 2vw;
   }
 
+  .header-intro {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+  }
+
   #skills .skill-logo,
   #skills .soft-skill-logo {
     margin-top: 25px;
