@@ -349,7 +349,8 @@ button.navbar-toggler {
 }
 
 #skills .card:hover {
-  transform: translateY(-15px);
+  /* transform: translateY(-15px); */
+  transform: scale(1.1);
 }
 
 /* EXPERIENCE */
@@ -785,6 +786,12 @@ button.navbar-toggler {
     padding: 3rem 1.5rem;
   }
 
+  #skills .skill-logo {
+    gap: 20px;
+    padding-bottom: 30px !important;
+    justify-content: space-between;
+  }
+
   #experience .experience__tab-container {
     width: 100%;
     gap: 10px !important;
@@ -798,6 +805,7 @@ button.navbar-toggler {
     width: 120px;
     padding: 10px;
     text-align: center;
+    font-size: 14px;
   }
 
   #experience .edu-info div {
@@ -816,6 +824,10 @@ button.navbar-toggler {
   .experience__content--active {
     display: flex;
     flex-direction: column;
+  }
+
+  #experience .edu-item > div {
+    padding: 1rem;
   }
 
   #projects .modal-dialog,
