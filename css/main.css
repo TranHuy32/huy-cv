@@ -750,7 +750,8 @@ button.navbar-toggler {
 
 @media (max-width: 768px) {
   .header {
-    background-position: center center; /* Adjust background position for mobile devices */
+    background: #151515 url(../images/intro-bg-mobile.jpeg) no-repeat center
+      center;
     background-size: fill;
   }
 
