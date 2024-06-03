@@ -755,6 +755,12 @@ button.navbar-toggler {
     background-size: fill;
   }
 
+  .footer {
+    background: #151515 url(../images/intro-bg-mobile.jpeg) no-repeat center
+      bottom;
+    background-size: fill;
+  }
+
   .nav__links .nav-link {
     font-size: 14px !important;
   }
