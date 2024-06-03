@@ -503,7 +503,7 @@ button.navbar-toggler {
 /* PROJECTS */
 #projects .grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(auto, 420px));
+  grid-template-columns: repeat(3, 33%);
   justify-content: center;
   align-items: center;
   gap: 30px;
@@ -520,7 +520,8 @@ button.navbar-toggler {
 }
 
 #projects .projects_card {
-  width: 100%;
+  /* width: 100%; */
+  max-width: 420px;
   max-height: 420px;
   box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
@@ -733,6 +734,11 @@ button.navbar-toggler {
 
   #projects .grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  #projects .projects_card {
+    width: 100%;
+    max-width: none;
   }
 
   #projects .project-details-img {
