@@ -762,8 +762,10 @@ button.navbar-toggler {
     background-size: fill;
   }
 
-  .nav__links .nav-link {
+  .nav__links .nav-link,
+  .section__description {
     font-size: 14px !important;
+    text-align: left !important;
   }
 
   #welcome-section h1 {
