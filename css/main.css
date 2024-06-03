@@ -308,7 +308,7 @@ button.navbar-toggler {
 
 #skills .box {
   width: 290px;
-  height: 150px;
+  max-height: 180px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -790,7 +790,6 @@ button.navbar-toggler {
   #skills .skill-logo {
     gap: 20px;
     padding-bottom: 30px !important;
-    justify-content: space-between;
   }
 
   #skills .box {
