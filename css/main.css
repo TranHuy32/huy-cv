@@ -707,6 +707,11 @@ button.navbar-toggler {
     align-items: center;
   }
 
+  #skills .skill-title {
+    justify-content: center !important;
+    margin-bottom: 25px;
+  }
+
   #skills .skill-logo,
   #skills .soft-skill-logo {
     margin-top: 25px;
@@ -745,7 +750,8 @@ button.navbar-toggler {
 
 @media (max-width: 768px) {
   .header {
-    background-position: center bottom; /* Adjust background position for mobile devices */
+    background-position: center center; /* Adjust background position for mobile devices */
+    background-size: fill;
   }
 
   .nav__links .nav-link {
