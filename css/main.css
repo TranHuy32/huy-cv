@@ -31,7 +31,7 @@ body {
 .project-info a,
 .project-info div,
 .right-reserve {
-  font-size: 14px !important;
+  font-size: 15px !important;
 }
 
 .section {
@@ -94,8 +94,7 @@ body {
 }
 
 figcaption {
-  font-size: 14px;
-  font-style: italic;
+  font-size: 15px;
   text-align: center;
 }
 
@@ -764,7 +763,7 @@ button.navbar-toggler {
 
   .nav__links .nav-link,
   .section__description {
-    font-size: 14px !important;
+    font-size: 15px !important;
     text-align: left !important;
   }
 
@@ -794,6 +793,10 @@ button.navbar-toggler {
     justify-content: space-between;
   }
 
+  #skills .box {
+    width: 100%;
+  }
+
   #experience .experience__tab-container {
     width: 100%;
     gap: 10px !important;
@@ -807,7 +810,7 @@ button.navbar-toggler {
     width: 120px;
     padding: 10px;
     text-align: center;
-    font-size: 14px;
+    font-size: 15px;
   }
 
   #experience .edu-info div {
@@ -819,8 +822,9 @@ button.navbar-toggler {
     padding: 1rem;
   }
 
-  #experience .job-content li {
-    font-size: 14px !important;
+  #experience .job-content li,
+  #experience .job-content span {
+    font-size: 15px !important;
   }
 
   .experience__content--active {
@@ -835,6 +839,11 @@ button.navbar-toggler {
   #projects .modal-dialog,
   #projects .modal-content {
     height: 550px !important;
+  }
+
+  #projects ol,
+  ul {
+    padding-left: 1rem;
   }
 
   #projects .grid {
