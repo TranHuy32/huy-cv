@@ -737,6 +737,10 @@ button.navbar-toggler {
 }
 
 @media (max-width: 768px) {
+  .header {
+    background-position: center bottom; /* Adjust background position for mobile devices */
+  }
+
   .nav__links .nav-link {
     font-size: 14px !important;
   }
