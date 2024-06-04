@@ -503,7 +503,7 @@ button.navbar-toggler {
 /* PROJECTS */
 #projects .grid {
   display: grid;
-  grid-template-columns: repeat(3, 33%);
+  grid-template-columns: repeat(3, 33fr);
   justify-content: center;
   align-items: center;
   gap: 30px;
